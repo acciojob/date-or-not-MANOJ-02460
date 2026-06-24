@@ -1,11 +1,13 @@
 var isDate = function (input) {
   //   write your code here
 
-	if(input === new Date()){
-		return true
+	let d = new Date(input);
+
+	if(Number.isNaN(d.getTime())){
+		return false
 	}
-	return false
-	
+
+	return true; 
 };
   
 // Do not change the code below.
